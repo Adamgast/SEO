@@ -1359,11 +1359,20 @@ h1, h2, h3, h4, h5, h6 {
   color: #003ecd;
 }
 
-.clients__img {
+.clients__video {
   position: relative;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 645px;
           flex: 0 1 645px;
+}
+.clients__video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (max-width: 1312px) {
@@ -1400,8 +1409,8 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
   }
 
-  .clients__img {
-    padding: 0 0 70% 0;
+  .clients__video {
+    padding: 0 0 60% 0;
   }
 
   .clients__title {
